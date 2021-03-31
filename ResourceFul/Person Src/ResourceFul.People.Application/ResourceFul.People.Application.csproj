@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ResourceFul.People.Domain\ResourceFul.People.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PersonItems\" />
+    <Folder Include="PersonItems\Commands\" />
+    <Folder Include="PersonItems\Queries\" />
+    <Folder Include="PersonItems\Queries\GetPersonItems\" />
+    <Folder Include="PersonItems\Dtos\" />
+    <Folder Include="Common\" />
+    <Folder Include="Common\Mappings\" />
+    <Folder Include="Common\Interfaces\" />
+    <Folder Include="PersonItems\Queries\GetPerson\" />
+    <Folder Include="PersonItems\Commands\CreatePerson\" />
+    <Folder Include="PersonItems\Commands\UpdatePerson\" />
+    <Folder Include="Common\Exceptions\" />
+    <Folder Include="PersonItems\Commands\DeletePerson\" />
+    <Folder Include="Common\Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.4" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+  </ItemGroup>
+</Project>
